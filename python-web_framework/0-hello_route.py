@@ -10,6 +10,7 @@ Fonctionnalités:
 
 
 from flask import Flask
+
 app = Flask(__name__)
 
 
@@ -17,24 +18,10 @@ app = Flask(__name__)
 def greet():
     """
     Vue associée à la route '/'.
-    Retourne un message de bienvenue "Hello HBNB!"
-    lorsqu'un utilisateur accède à cette route.
+    Retourne un message de bienvenue "Hello HBNB!" lorsqu'un
+    utilisateur accède à cette route.
     """
     return "Hello HBNB!"
-
-
-class MyClass:
-    """
-    Une classe d'exemple pour satisfaire la documentation.
-    """
-    pass
-
-
-def my_function():
-    """
-    Une fonction d'exemple pour satisfaire la documentation.
-    """
-    pass
 
 
 if __name__ == "__main__":
