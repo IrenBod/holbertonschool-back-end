@@ -23,5 +23,19 @@ def greet():
     return "Hello HBNB!"
 
 
+class MyClass:
+    """
+    Une classe d'exemple pour satisfaire la documentation.
+    """
+    pass
+
+
+def my_function():
+    """
+    Une fonction d'exemple pour satisfaire la documentation.
+    """
+    pass
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
