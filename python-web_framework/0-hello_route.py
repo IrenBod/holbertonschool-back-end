@@ -1,13 +1,12 @@
 #!/usr/bin/python3
 """
-Ce module cree une application Flask qui repond
-a une requete HTTP GET sur la route '/'.
+This module creates a Flask web application that responds
+to an HTTP GET request on the route '/'.
 
-Fonctionnalites:
-- Demarre un serveur web local sur l hote 0.0.0.0 et le port 5000.
-- Repond a la route '/' avec un message "Hello HBNB!".
+Features:
+- Starts a local web server on host 0.0.0.0 and port 5000.
+- Responds to the route '/' with the message "Hello HBNB!".
 """
-
 
 from flask import Flask
 
@@ -17,9 +16,9 @@ app = Flask(__name__)
 @app.route("/", strict_slashes=False)
 def greet():
     """
-    Vue associee a la route '/'.
-    Retourne un message de bienvenue "Hello HBNB!" lorsqu un
-    utilisateur accede a cette route.
+    View associated with the route '/'.
+    Returns a welcome message "Hello HBNB!" when a user
+    accesses this route.
     """
     return "Hello HBNB!"
 
