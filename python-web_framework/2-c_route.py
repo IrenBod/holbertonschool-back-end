@@ -38,6 +38,32 @@ def hbnb():
     """
 
 
+@app.route("/c/<text>", strict_slashes=False)
+def c(text):
+    """
+    Route handler for '/c/<text>'.
+
+    This function takes a dynamic variable 'text' from the URL, replaces any
+    underscores ('_') with spaces (' '), and returns a formatted string.
+
+    Args:
+        text (str): The dynamic part of the URL, which is a string that may
+                    include underscores.
+
+    Returns:
+        str: A string in the format "C <text>", where underscores are replaced
+             with spaces.
+
+    Example:
+        - URL: /c/is_fun
+          Response: "C is fun"
+
+        - URL: /c/cool
+          Response: "C cool"
+    """
+    return f"C {text.replace('_', ' ')}"
+
+
 if __name__ == "__main__":
     # Run the Flask development server on host 0.0.0.0 and port 5000
     app.run(host="0.0.0.0", port=5000)
